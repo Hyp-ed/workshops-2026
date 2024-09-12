@@ -18,9 +18,9 @@ We have provided you with our `HypedI2C` abstraction layer which simplifies the 
 ## Hardware Required
 
 - STM32L476RG Nucleo-32 development board
-- I2C temperature sensor (STTS221) (you may have to share this with other participants - but you only need to have the sensor when you are testing your completed code)
+- I2C temperature sensor (STTS22H) (you may have to share this with other participants - but you only need to have the sensor when you are testing your completed code)
 
-The datasheet for the STTS221 temperature sensor can be found [here](https://www.st.com/resource/en/datasheet/stts221.pdf). You will need to refer to this datasheet in order to work out how to read the temperature data from the sensor!
+The datasheet for the STTS22H temperature sensor can be found [here](https://www.st.com/resource/en/datasheet/stts22h.pdf). You will need to refer to this datasheet in order to work out how to read the temperature data from the sensor!
 
 ## Hardware Setup
 
