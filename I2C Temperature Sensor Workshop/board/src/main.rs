@@ -18,7 +18,7 @@ async fn main(_spawner: Spawner) -> ! {
 
     // Task 2: Create a new instance of the temperature sensor
 
-    
+    let mut temperature_sensor = todo!();
 
     // END OF TASK 2
 
