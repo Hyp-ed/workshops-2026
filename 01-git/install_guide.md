@@ -4,12 +4,36 @@
 
 ### 1.1.1 Windows
 
-On windows, we use WSL, which gives us a virtual linux kernel with which to
+To install git on Windows, you can use the Windows Subsystem for Linux (WSL) or Git Bash.
 
-1. Install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
-2. Reboot.
-3. Run WSL.
-4. Follow the instructions for Linux.
+#### WSL
+
+1. Open the Microsoft Store and search for "Ubuntu" or any other Linux distribution you prefer.
+2. Click on "Install" and wait for the installation to finish.
+3. Open the installed distribution and set up your username and password.
+4. Run the following commands to install git:
+
+   ```
+   sudo apt update
+   sudo apt install git
+   ```
+
+5. Verify the installation by running
+
+   ```
+   git --version
+   ```
+
+#### Git Bash
+
+1. Download the installer from the [official website](https://git-scm.com/download/win).
+2. Run the installer and follow the instructions.
+3. Open Git Bash from the start menu.
+4. Verify the installation by running
+
+   ```
+   git --version
+   ```
 
 ### 1.1.2 Linux
 
@@ -19,8 +43,8 @@ If you are on any mainstream Linux distro, your package manager will include a p
 2. On Debian-based distributions like Ubuntu, you can run
 
    ```
-   $ sudo apt update
-   $ sudo apt install git
+   sudo apt update
+   sudo apt install git
    ```
 
    to update the package database and install git.
@@ -28,7 +52,7 @@ If you are on any mainstream Linux distro, your package manager will include a p
 3. Verify the installation by running
 
    ```
-   $ git --version
+   git --version
    ```
 
 ### 1.1.3 MacOS
@@ -40,13 +64,13 @@ The easiest way to install git on MacOS is by using [Homebrew](https://brew.sh).
 3. Run the command
 
    ```
-   $ brew install git
+   brew install git
    ```
 
 4. Verify the installation worked by running
 
    ```
-   $ git --version
+   git --version
    ```
 
 ## 1.2 Setting up GitHub
@@ -57,8 +81,8 @@ To work with the Software Team, you don't only need git, but also GitHub.
 2. In your terminal (WSL on Windows), run the following commands to make sure your contributions are attirbuted correctly:
 
    ```
-   $ git config --global user.name <Your Name>
-   $ git config --global user.email <your@github.email>
+   git config --global user.name <Your Name>
+   git config --global user.email <your@github.email>
    ```
 
    Make sure you are using the same email adress as on your GitHub account.

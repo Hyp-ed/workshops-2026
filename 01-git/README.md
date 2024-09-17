@@ -7,6 +7,11 @@
 We will be available during the workshop time to help you if you have any problems related to the guide examples and the workshop exercises.
 If you have any other questions but are not able to ask during the workshop, don't hesitate to message us on Slack!
 
+Here are some YouTube videos which explain the basics of `git` and how it works:
+
+- [Git Explained in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE) - a very short and concise explanation
+- [Git Overview - Computerphile](https://www.youtube.com/watch?v=92sycL8ij-U) - a more in-depth explanation about how version control systems like `git` work
+
 ## Preparation
 
 1. Install git on your machine
