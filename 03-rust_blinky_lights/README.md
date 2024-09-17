@@ -39,7 +39,7 @@ You can see an example of this code in the `src/bin/example.rs`.
 ### The LED
 
 ```rust
-    let mut led = Output::new(p.PB7, Level::High, Speed::Low);
+    let mut led = Output::new(p.PA5, Level::High, Speed::Low);
 ```
 
 This creates a new `Ouput` struct, which represents a GPIO pin that can be written to. The first argument is the pin, the second is the initial state of the pin, and the third is the speed of the pin.
@@ -49,13 +49,13 @@ On this model of STM32, the LED is connected to pin PB7. This means that if we s
 This will set the LED to high, turning it on:
 
 ```rust
-    led.set_high().unwrap();
+    led.set_high();
 ```
 
 Conversely, this will set the LED to low, turning it off:
 
 ```rust
-    led.set_low().unwrap();
+    led.set_low();
 ```
 
 ### The Loop
@@ -64,9 +64,9 @@ All code written for the STM microcontrollers have a loop that runs forever. Thi
 
 ```rust
     loop {
-        led.set_high().unwrap();
+        led.set_high();
         Timer::after_millis(300).await;
-        led.set_low().unwrap();
+        led.set_low();
         Timer::after_millis(300).await;
     }
 ```

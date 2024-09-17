@@ -3,7 +3,6 @@
 
 use defmt::*;
 use embassy_executor::Spawner;
-use embassy_stm32::gpio::{Level, Output, Speed};
 use embassy_time::Timer;
 use {defmt_rtt as _, panic_probe as _};
 
@@ -11,6 +10,6 @@ use {defmt_rtt as _, panic_probe as _};
 async fn main(_spawner: Spawner) {
     loop {
         info!("Hello, world!");
-        Timer::new(1_000_000).await;
+        Timer::after_secs(1).await;
     }
 }
