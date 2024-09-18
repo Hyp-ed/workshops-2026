@@ -39,9 +39,9 @@ Make sure that you have Rust and `probe-rs` installed on your computer. You can 
 
 In this section, you will complete the code provided so that the STM32 microcontroller reads temperature data from the I2C temperature sensor. The code is divided into three parts:
 
-1. **Temperature reading logic**: In the `sensors/src/temperature/rs` file, you need to implement the `read` function that reads temperature data from the I2C temperature sensor. You can use the `HypedI2C` struct provided to communicate with the sensor, you can see the methods available in the `io/src/i2c.rs` file. (You will need to read the datasheet for the sensor in order to work out how to read the temperature data.) All of the required register addresses are provided in the file, and may give you a hint as to how to read the temperature data. Make sure that you return the temperature data in degrees Celsius!
+1. **Temperature reading logic**: In the `sensors/src/temperature.rs` file, you need to implement the `read` function that reads temperature data from the I2C temperature sensor. You can use the `HypedI2C` struct provided to communicate with the sensor, you can see the methods available in the `io/src/i2c.rs` file. (You will need to read the datasheet for the sensor in order to work out how to read the temperature data.) All of the required register addresses are provided in the file, and may give you a hint as to how to read the temperature data. Make sure that you return the temperature data in degrees Celsius!
 
-2. **Initialise the temperature sensor**: In the `board/src/mainr.rs` file, you need to write the code to create a new `Temperature` struct. Have a look at the parameters of the `Temperature::new` function in the `sensors/src/temperature.rs` file to see what you need to pass in.
+2. **Initialise the temperature sensor**: In the `board/src/main.rs` file, you need to write the code to create a new `Temperature` struct. Have a look at the parameters of the `Temperature::new` function in the `sensors/src/temperature.rs` file to see what you need to pass in.
 
 3. **Print the temperature**: In the `board/src/main.rs` file, you need to write the code to print the temperature data to the console. You can use the `dfmt::info!` macro to print the temperature data. Look at the `read` function that you implemented earlier to see how to get the temperature data.
 
