@@ -42,7 +42,7 @@ You can see an example of this code in the `src/bin/example.rs`.
     let mut led = Output::new(p.PA5, Level::High, Speed::Low);
 ```
 
-This creates a new `Ouput` struct, which represents a GPIO pin that can be written to. The first argument is the pin, the second is the initial state of the pin, and the third is the speed of the pin.
+This creates a new `Output` struct, which represents a GPIO pin that can be written to. The first argument is the pin, the second is the initial state of the pin, and the third is the speed of the pin.
 
 On this model of STM32, the LED is connected to pin PB7. This means that if we set this pin high, the LED will turn on.
 
