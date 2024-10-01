@@ -1,4 +1,4 @@
-# Rust + STM Blinky Lights Workshop
+# Introduction to Embassy
 
 This workshop will guide you through the process of setting up a Rust project for an STM32 microcontroller, and writing a simple program that blinks an LED.
 
@@ -94,4 +94,4 @@ git commit -m "Add my code"
 git push origin <your branch name>
 ```
 
-Please conform to the following naming convention for your branch: `03-rust-blinky-lights/<your name>`. For example, if your name is Ferris, your branch name would be `03-rust-blinky-lights/ferris`.
+Please conform to the following naming convention for your branch: `02-intro_to_embassy/<your name>`. For example, if your name is Ferris, your branch name would be `02-intro_to_embassy/ferris`.
